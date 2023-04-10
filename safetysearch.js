@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", () => {
                                             if (ratio <= 2) return '<span style="color: greenyellow;">ALMOST NONE</span>';
                                             else if (ratio > 2 && ratio <= 10) return '<span style="color: greenyellow;">VERY LOW</span>';
                                             else if (ratio > 10 && ratio <= 15) return '<span style="color: greenyellow;">LOW, BUT WITH CHANCES</span>';
-                                            else if (ratio > 25 && ratio <= 40) return '<span style="color: darkorange;">MODERATE</span>';
+                                            else if (ratio > 15 && ratio <= 40) return '<span style="color: darkorange;">MODERATE</span>';
                                             else if (ratio > 40 && ratio <= 60) return '<span style="color: mediumvioletred;">HIGH</span>';
                                             else if (ratio > 60) return '<span style="color: red;">DEATH IS VERY PROBABLE</span>';
                                         }
