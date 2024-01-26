@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+    lang="en-us"
+    data-bs-theme="dark"
+    data-bs-core="modern"
+>
+
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        >
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
         <title>EvE System FlySafe browser</title>
-        <link href="style.css" rel="stylesheet" />
-    </head>    
-    <script type="text/javascript" src="safetysearch.js"></script>
-    <body>
-        <header>
-            <h1>FlySafe browser</h1>
-        </header>
-        <main id="main-element">
-            <p id="data-preload">Preloading data, please wait... <span class="load-spinner">*</span></p>
-            <div id="browser-main" class="preload-not-ready">
-                <p class="data-ready" style="color: lightgray;">Please type the EXACT name of the system you want to analyze</p>
-                <form id="system-search">
-                    <label for="system-name">System name: </label>
-                    <input type="text" name="system-name" id="system-name" value="">
-                    <input type="submit" title="Send">
-                </form>
-                <div id="results"></div>
-            </div>
-        </main>
+
+        <!-- Halfmoon CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/halfmoon.min.css"
+            rel="stylesheet"
+            integrity="sha256-SsJizWSIG9JT9Qxbiy8xnYJfjCAkhEQ0hihxRn7jt2M="
+            crossorigin="anonymous"
+        >
+        <!-- Halfmoon modern core theme -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/cores/halfmoon.modern.css"
+            rel="stylesheet"
+            integrity="sha256-DD6elX+jPmbFYPsGvzodUv2+9FHkxHlVtQi0/RJVULs="
+            crossorigin="anonymous"
+        >
+    </head>
+
+    <body class="container-fluid">
+        <div class="container">
+            <header>
+                <h1 class="display-1">System Intel</h1>
+            </header>
+            <main
+                id="main-element"
+                class="rounded-4 p-0 border border-info border-5 border-top-0 border-end-0 border-bottom-0"
+            >
+                <article class="card shadow">
+                    <header class="card-header">
+                        <h1 class="card-title">EvE System Danger Rating</h1>
+                    </header>
+                    <div
+                        id="browser-main"
+                        class="preload-not-ready"
+                    >
+                        <p id="data-preload">Preloading data, please wait... 
+                            <span
+                                id="load-spinner"
+                                class="load-spinner"
+                            >*</span>
+                        </p>
+                    </div>
+                    <form
+                        id="system-search"
+                        class="form p-5"
+                    >
+                        <fieldset class="">
+                            <legend>System Search:</legend>
+                        </fieldset>
+                        <p class="data-ready lead">Please type the EXACT name of the
+                            system you want to
+                            analyze
+                        </p>
+                        <div class="input-group">
+                            <label
+                                for="system-name"
+                                class="input-group-text"
+                            >Search For A System:</label>
+                            <input
+                                type="text"
+                                name="system-name"
+                                id="system-name"
+                                value=""
+                                class="form-control"
+                            >
+                            <input
+                                type="submit"
+                                title="Send"
+                                class="btn btn-outline-info form-input"
+                            >
+                        </div>
+                    </form>
+                    <div id="results"></div>
+                </article>
+            </main>
+        </div>
+        <script
+            type="text/javascript"
+            src="safetysearch.js"
+        ></script>
     </body>
+
 </html>

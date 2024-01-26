@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+    lang="en-us"
+    data-bs-theme="dark"
+    data-bs-core="modern"
+>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        >
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
         <title>EvE System FlySafe browser</title>
-        <link href="style.css" rel="stylesheet" />
-    </head>    
-    <body>
+        <!-- Halfmoon CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/halfmoon.min.css"
+            rel="stylesheet"
+            integrity="sha256-SsJizWSIG9JT9Qxbiy8xnYJfjCAkhEQ0hihxRn7jt2M="
+            crossorigin="anonymous"
+        >
+        <!-- Halfmoon modern core theme -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/cores/halfmoon.modern.css"
+            rel="stylesheet"
+            integrity="sha256-DD6elX+jPmbFYPsGvzodUv2+9FHkxHlVtQi0/RJVULs="
+            crossorigin="anonymous"
+        >
+    </head>
+
+    <body class="container-fluid pt-5">
+        <div class="container p-3 my-5 bg-danger-subtle bg-opacity-10 text-center border border-5 border-danger shadow w-lg-75 w-md-90 w-100">
         <header>
-            <h1>FlySafe browser</h1>
+            <h1 class="display-1">❌ Error 404</h1>
         </header>
-        <main id="main-element">
-            <h1>Error 404</h1>
-            <p>Uh oh... looks that this resource haven't been found</p>
-            <p><a href="index.html">Go to home</a></p>
+        <main id="main-element" class="">
+            <h2><p class="display-2 d-inline">😯</p> Uh-oh...</h2>
+            <h3 class="">Looks like this resource is missing <p class="display-3 d-inline">💩</p></h3>
+            
         </main>
+        </div>
+        <footer class="fixed-bottom">
+        <p class="text-center p-0 m-0">🏠<a href="index.html">Return to the home page</a></p>
+    </footer>
     </body>
+
 </html>
